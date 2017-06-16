@@ -7,7 +7,8 @@
     android:background="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="1"
-    tools:context="com.example.maartje.programmeren_4_tentamen.MainActivity">
+    tools:context="com.example.maartje.programmeren_4_tentamen.presentation.MainActivity"
+    android:id="@+id/activityLogin">
 
     <TextView
         android:id="@+id/textView"
