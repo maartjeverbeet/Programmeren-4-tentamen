@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="1"
     tools:context="com.example.maartje.programmeren_4_tentamen.MainActivity">
@@ -13,9 +13,13 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
         android:text="Inloggen"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
-        android:textColor="@android:color/white"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -55,4 +59,15 @@
         android:textColor="@color/colorAccent"
         android:textColorLink="@color/colorAccent"
         android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/registreerText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Registreren"
+        android:textAlignment="center"
+        android:textStyle="italic" />
 </LinearLayout>
