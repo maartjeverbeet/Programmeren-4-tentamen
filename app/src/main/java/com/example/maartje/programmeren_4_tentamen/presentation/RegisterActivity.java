@@ -9,6 +9,9 @@ import android.widget.EditText;
 
 import com.example.maartje.programmeren_4_tentamen.R;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class RegisterActivity extends AppCompatActivity {
 
     EditText voornaamEdit, achternaamEdit, emailEdit, wachtwoordEdit;
@@ -36,12 +39,22 @@ public class RegisterActivity extends AppCompatActivity {
                 email = emailEdit.getText().toString();
                 password = emailEdit.getText().toString();
 
-                register(voornaam, achternaam, email, password);
+                try {
+                    register(voornaam, achternaam, email, password);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
 
-    public void register(String vn, String an, String em, String pw){
-        Log.d("register", "GB: " + vn);
+    public void register(String vn, String an, String em, String pw) throws JSONException {
+        JSONObject json = new JSONObject();
+        json.put("first_name", vn);
+        json.put("last_name", an);
+        json.put("email", em);
+        json.put("password_user", pw);
+
+        Log.d("registreer", json.toString());
     }
 }
