@@ -23,7 +23,6 @@
             android:ems="10"
             android:hint="voornaam"
             android:inputType="textPersonName"
-            android:text="Name"
             android:textSize="14sp" />
 
         <TextView
@@ -40,7 +39,6 @@
             android:ems="10"
             android:hint="achternaam"
             android:inputType="textPersonName"
-            android:text="Name"
             android:textSize="14sp" />
 
         <TextView
@@ -58,7 +56,6 @@
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textPersonName"
-            android:text="Name"
             android:textSize="14sp" />
 
         <TextView
