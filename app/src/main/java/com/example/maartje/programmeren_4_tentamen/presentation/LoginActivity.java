@@ -55,8 +55,6 @@ public class LoginActivity extends AppCompatActivity {
                 mPassword = editTextPassword.getText().toString();
                 txtLoginErrorMsg.setText("");
 
-                // TODO Checken of username en password niet leeg zijn
-
                 handleLogin(mUsername, mPassword);
             }
         });
